@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./BinaryClassification_DailyReport
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./BinaryClassification_DailyRepor --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./BinaryClassification_DailyRepor --no-build --verbosity normal
