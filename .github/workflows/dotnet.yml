@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 2.1.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore --packages BinaryClassification_DailyReport
     - name: Build
       run: dotnet build --no-restore
     - name: Test
